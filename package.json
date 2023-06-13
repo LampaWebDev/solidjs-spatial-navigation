@@ -1,5 +1,5 @@
 {
-	"name": "@lampa/solidjs-spatial-navigation",
+	"name": "@lampa-dev/solidjs-spatial-navigation",
 	"version": "1.0.0",
 	"description": "SolidJS spatial navigation library",
 	"main": "./dist/index.cjs",

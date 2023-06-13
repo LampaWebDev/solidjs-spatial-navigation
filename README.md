@@ -1,8 +1,8 @@
 <p>
-  <img width="100%" src="https://assets.solidjs.com/banner?type=@lampa/solidjs-spatial-navigation&background=tiles&project=%20" alt="SolidJS spatial navigation">
+  <img width="100%" src="https://assets.solidjs.com/banner?type=@lampa-dev/solidjs-spatial-navigation&background=tiles&project=%20" alt="SolidJS spatial navigation">
 </p>
 
-# @lampa/solidjs-spatial-navigation
+# @lampa-dev/solidjs-spatial-navigation
 
 SolidJS spatial navigation library. Forked from [NoriginMedia/Norigin-Spatial-Navigation](https://github.com/NoriginMedia/Norigin-Spatial-Navigation).
 
@@ -33,7 +33,7 @@ A list of changes for all the versions for the solidjs-spatial-navigation:
 # Installation
 
 ```bash
-npm i @lampa/solidjs-spatial-navigation --save
+npm i @lampa-dev/solidjs-spatial-navigation --save
 ```
 
 # Usage
@@ -45,7 +45,7 @@ npm i @lampa/solidjs-spatial-navigation --save
 ```jsx
 // Called once somewhere in the root of the app
 
-import { init } from '@lampa/solidjs-spatial-navigation';
+import { init } from '@lampa-dev/solidjs-spatial-navigation';
 
 init({
 	// options
@@ -58,7 +58,7 @@ Most commonly you will have Leaf Focusable components. (See [Tree Hierarchy](#tr
 Leaf component is the one that doesn't have focusable children.
 
 ```jsx
-import { Focusable } from '@lampa/solidjs-spatial-navigation';
+import { Focusable } from '@lampa-dev/solidjs-spatial-navigation';
 
 function Button() {
 	return (
@@ -80,7 +80,7 @@ You can nest multiple FocusableGroups. When focusing the top level Container, it
 I.e. if you set focus to the `Page`, the focus could propagate as following: `Page` -> `ContentWrapper` -> `ContentList` -> `ListItem`.
 
 ```jsx
-import { FocusableGroup } from '@lampa/solidjs-spatial-navigation';
+import { FocusableGroup } from '@lampa-dev/solidjs-spatial-navigation';
 import ListItem from './ListItem';
 
 function ContentList() {
@@ -101,7 +101,7 @@ function ContentList() {
 ## Get API for managing focus
 
 ```jsx
-import { useSpatialNavigation } from '@lampa/solidjs-spatial-navigation';
+import { useSpatialNavigation } from '@lampa-dev/solidjs-spatial-navigation';
 import { onMount } from 'solid-js';
 
 function App() {
@@ -127,7 +127,7 @@ a `hasFocusedChild` flag indicating when a Container component is having focused
 It is useful for example when you want to style a container differently based on whether it has focused Child or not.
 
 ```jsx
-import { FocusableGroup } from '@lampa/solidjs-spatial-navigation';
+import { FocusableGroup } from '@lampa-dev/solidjs-spatial-navigation';
 import MenuItem from './MenuItem';
 
 function ContentList() {
@@ -152,7 +152,7 @@ a component underneath the Popup. This can be enabled with `isFocusBoundary` pro
 
 ```jsx
 import { onMount } from 'solid-js';
-import { FocusableGroup, useSpatialNavigation } from '@lampa/solidjs-spatial-navigation';
+import { FocusableGroup, useSpatialNavigation } from '@lampa-dev/solidjs-spatial-navigation';
 
 function Popup() {
 	const { setFocus } = useSpatialNavigation();
